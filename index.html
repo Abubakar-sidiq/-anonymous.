@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Messaging</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to Anonymous Messaging</h1>
+
+    <!-- Registration Form -->
+    <div id="register">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <input type="text" id="username" placeholder="Enter username" required>
+            <input type="password" id="password" placeholder="Enter password" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="loginUsername" placeholder="Enter username" required>
+            <input type="password" id="loginPassword" placeholder="Enter password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Messaging Section -->
+    <div id="messaging" style="display: none;">
+        <h2>Send an Anonymous Message</h2>
+        <form id="messageForm">
+            <input type="text" id="recipient" placeholder="Recipient username" required>
+            <textarea id="messageContent" placeholder="Type your message here..." required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <h3>Your Messages</h3>
+        <div id="messages"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
