@@ -1,24 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: yellow;
-    color: white;
+    background-color: #f8ecef; /* Soft pastel pink background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-form {
-    margin: 20px;
+h2 {
+    margin-bottom: 20px;
+    color: #d99eab; /* Muted pink for heading text */
 }
 
-input, textarea {
+form input, form textarea {
+    width: 100%;
     padding: 10px;
-    margin: 10px;
-    width: 80%;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f0f2; /* Light pink input background */
 }
 
-button {
-    padding: 10px 20px;
-    background-color: white;
-    color: yellow;
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d99eab; /* Soft pink button */
+    color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
+
+form button:hover {
+    background-color: #c87f90; /* Darker pink on hover */
+}
+
+p {
+    margin-top: 15px;
+    color: #666; /* Neutral gray text */
+}
+
+a {
+    color: #d99eab; /* Pink link text */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
